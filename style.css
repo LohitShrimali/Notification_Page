@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url(assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans Extra Bold';
+    src: url(assets/fonts/static/PlusJakartaSans-ExtraBold.ttf);
+}
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+
+body {
+    font-family: 'Plus Jakarta Sans';
+    font-size: 1em;
+
+    display: flex;
+    justify-content: center;
+    background-color: var(--Very-light-grayish-blue);
+
+}
+
+main {
+    margin: 1rem;
+    background-color: var(--White);
+    padding: 1rem 2rem;
+    border-radius: 15px;
+}
+
+.notifications-header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.notifications-header h1 {
+    font-family: 'Plus Jakarta Sans Extra Bold';
+    font-weight: 800;
+    color: rgb(3, 3, 113);
+    font-size: 1.4em;
+}
+
+.notifications-number {
+    background-color: rgb(24, 24, 79);
+    padding: .2rem .8rem;
+    color: white;
+    font-weight: 800;
+    border: 1px solid blue;
+    border-radius: .25rem;
+}
+
+.mark-all-read {
+    margin-left: auto;
+    color: rgb(3, 3, 113);
+}
+
+.notification-unread-icon {
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+}
+.bg{
+    display: flex;
+    background-color:whitesmoke;
+    width: 100%;
+    padding: 50px;
+}
+.new{
+    
+    background-color: whitesmoke;
+}
+
+.notification {
+    margin-top: 1rem;
+    padding: .5rem .4rem;
+    font-size: .8em;
+    color: rgb(26, 26, 74);
+}
+
+.notification strong {
+    color: rgb(3, 3, 113);
+    font-weight: 800;
+}
+
+.notification-content {
+    display: flex;
+    gap: .5rem;
+}
+
+.avatar-container {
+    min-width: 2.6rem;
+    margin-right: 0.75rem;
+}
+
+.avatar-container img,
+.commented-picture img {
+    height: 2.6rem;
+    width: 2.6rem;
+    object-fit: cover;
+}
+
+.private-message-container {
+    margin-left: 4rem;
+    padding: .75rem;
+    border: 0.5px solid rgb(76, 76, 158);
+}
+
+.commented-picture {
+    margin-left: auto;
+}
+
+.mark-all-read:hover,
+.notification strong:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+.commented-picture:hover,
+.private-message-container:hover {
+    cursor: pointer;
+}
+
+.private-message-container:hover {
+    background-color: rgb(152, 152, 245);
+    border: 1px solid rgb(152, 152, 245);
+}
